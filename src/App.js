@@ -25,18 +25,39 @@ const App = () => {
     return (
         <div>
             <Navbar />
-            <section className="workout-section">
-                {workouts.map((workout) => {
-                    return (
-                        <div className="single-workout">
-                            <h1>{workout.title}</h1>
-                            <YoutubeEmbed embedId={workout.url} />
-                        </div>
-                    )
-                })}
-                <ul>
-                </ul>
+            <h1 id="heading">Workout</h1>
+
+            <section className="workout-container">
+                <h2>Oberkörper</h2>
+                <div className="workout-section">
+                    {workouts.map((workout => {
+                        if (workout.category.includes('every') || workout.category.includes('upper')) {
+                            return (
+                                <div className="single-workout">
+                                    <h1>{workout.title}</h1>
+                                    <YoutubeEmbed embedId={workout.url} />
+                                </div>
+                            )
+                        }
+                    }))}
+                </div>
             </section>
+            <section className="workout-container">
+                <h2>Beine</h2>
+                <div className="workout-section">
+                    {workouts.map((workout => {
+                        if (workout.category.includes('every') || workout.category.includes('legs')) {
+                            return (
+                                <div className="single-workout">
+                                    <h1>{workout.title}</h1>
+                                    <YoutubeEmbed embedId={workout.url} />
+                                </div>
+                            )
+                        }
+                    }))}
+                </div>
+            </section>
+
         </div>)
 }
 
