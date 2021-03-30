@@ -1,6 +1,5 @@
 import React from 'react'
 import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom'
-import Navbar from './components/Navbar/Navbar'
 import './App.css'
 import Training from './Pages/Training'
 import About from './Pages/About'
@@ -8,16 +7,11 @@ import { Button } from './components/Button'
 
 
 const App = () => {
-    const legWorkout = 'legs';
-    const upperWorkout = 'upper';
 
     return (
         <Router>
             <nav className="navbar">
                 <h1 className="navbar-logo"><i className="fas fa-heartbeat"></i></h1>
-                <div className="menu-icon">
-                    <i className='fas fa-times'></i>
-                </div>
                 <ul className='nav-menu active'>
                     <li className="nav-links"><Link to="/">Home</Link></li>
                     <li className="nav-links"><Link to="/training">Training</Link></li>

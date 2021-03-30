@@ -1,3 +1,8 @@
+:root {
+    --primary: #6ebee0;
+    --background: #000851;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -35,11 +40,8 @@
     font-size: 1rem;
 }
 
-:root {
-    --primary: #6ebee0;
-    --background: #000851;
-}
 
+/* Navbar */
 .navbar {
 background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
 display: flex;
@@ -70,4 +72,8 @@ height: 8vh;
     background-color: var(--primary);
     border-radius: 4px;
     transition: all 0.2s ease-out;
+}
+
+.navbar-logo i {
+    color: white;
 }
