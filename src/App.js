@@ -5,6 +5,7 @@ import Training from './Pages/Training'
 import About from './Pages/About'
 import { Button } from './components/Button'
 import UploadForm from './components/UploadForm'
+import ImageGrid from './components/ImageGrid'
 
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
                 <Route path="/training" component={Training} />
             </Switch>
             <UploadForm />
+            <ImageGrid />
 
         </Router>
     )
