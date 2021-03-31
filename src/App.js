@@ -4,6 +4,7 @@ import './App.css'
 import Training from './Pages/Training'
 import About from './Pages/About'
 import { Button } from './components/Button'
+import UploadForm from './components/UploadForm'
 
 
 const App = () => {
@@ -22,6 +23,8 @@ const App = () => {
                 <Route path="/" exact component={About} />
                 <Route path="/training" component={Training} />
             </Switch>
+            <UploadForm />
+
         </Router>
     )
 }
