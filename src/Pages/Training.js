@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import WorkoutType from '../components/WorkoutType/WorkoutType'
 import { workouts } from '../data/workouts'
+import Header from '../components/Headings/Header'
 import './styles/Training.css'
 
 
@@ -23,6 +24,7 @@ export default function Training() {
 
     return (
         <section className="training-section">
+            <Header title="Training" text="" />
 
             <div className="btn-section">
                 <button onClick={selectWorkout} value={upperWorkout}>Oberkörper</button>
