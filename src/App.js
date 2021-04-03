@@ -5,19 +5,33 @@ import Training from './Pages/Training'
 import About from './Pages/About'
 import Nutrition from './Pages/Nutrition'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 
 const App = () => {
 
     return (
         <Router>
-            <nav className="navbar">
-                <h1 className="navbar-logo"><i className="fas fa-heartbeat"></i></h1>
-                <ul className='nav-menu active'>
-                    <li className="nav-links"><Link to="/">Home</Link></li>
-                    <li className="nav-links"><Link to="/training">Training</Link></li>
-                    <li className="nav-links"><Link to="/nutrition">Ernährung</Link></li>
-                </ul>
-            </nav>
+            <Navbar collapseOnSelect expand="lg" variant="dark">
+                <Container>
+                    <Navbar.Brand href="/"><i className="fas fa-heartbeat"></i></Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav className="mr-auto"></Nav>
+                        <Nav>
+                            <Nav.Link href="/">Startseite</Nav.Link>
+                            <Nav.Link href="/training">Training</Nav.Link>
+                            <NavDropdown title="Ernährung" id="collasible-nav-dropdown">
+                                <NavDropdown.Item href="/nutrition">Übersicht</NavDropdown.Item>
+                                <NavDropdown.Item href="/">Ernährungsbasics</NavDropdown.Item>
+                                <NavDropdown.Item href="/">Rezepte</NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="/">Gute Gründe</NavDropdown.Item>
+                            </NavDropdown>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+
             <Switch>
                 <Route path="/" exact component={About} />
                 <Route path="/training" component={Training} />

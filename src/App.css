@@ -72,39 +72,12 @@
 /* Navbar */
 .navbar {
 background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
-display: flex;
-justify-content: center;
-align-items: center;
 font-size: 1.2rem;
-height: 8vh;
+min-height: 80px;
+
 }
 
-.nav-menu {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
-    list-style: none;
-    text-align: center;
-    width: 70vw;
-    justify-content: end;
-    margin-right: 2rem;
-}
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-}
-
-.nav-links a:hover {
-    background-color: var(--primary);
-    border-radius: 4px;
-    transition: all 0.2s ease-out;
-}
-
-.navbar-logo i {
-    color: white;
-}
 
 /* Progress Bar */
 .progress-bar {
@@ -142,7 +115,8 @@ height: 8vh;
 
 .card-style {
     text-align: center;
-    margin: 1rem 0;
+    width: 70%;
+    margin: 1rem 10rem;
 }
 
 .card-style h5 {
