@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import WorkoutType from '../components/WorkoutType/WorkoutType'
-import { workouts } from '../workouts'
+import { workouts } from '../data/workouts'
 import './styles/Training.css'
 
 

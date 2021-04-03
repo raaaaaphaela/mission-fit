@@ -1,0 +1,15 @@
+.nutrition-links {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+.nutrition-links li {
+    padding-left: 2rem;
+    list-style: none;
+}
+
+.nutrition-links a {
+    color: var(--primary);
+    width: 40%;
+}

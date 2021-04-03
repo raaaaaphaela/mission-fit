@@ -1,6 +1,8 @@
 :root {
     --primary: #6ebee0;
     --background: #000851;
+    --card: #6ebee0;
+  
 }
 
 * {
@@ -9,10 +11,36 @@
     padding: 0;
 }
 
+/* Header */
+.header-text {
+    padding: 2rem 0 0 0;
+    text-align: center;
+}
+.header-text p {
+    padding: 1rem 0 0 0;
+}
+
 #heading {
     text-align: center;
     font-size: 3rem;
     padding-top: 1.5rem;
+}
+
+/* Section styles */
+
+.section {
+    padding: 2rem 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.section h3 {
+    padding-bottom: 1rem;
+}
+
+.section p {
+    line-height: 1.6;
 }
 
 .workout-type {
@@ -109,3 +137,20 @@ height: 8vh;
   top: 0;
   left: 0;
 }
+
+/* Card styling */
+
+.card-style {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.card-style h5 {
+    background: var(--card);
+}
+
+.card-style p {
+    padding: 1rem 0;
+    
+}
+

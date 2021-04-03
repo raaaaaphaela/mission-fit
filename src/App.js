@@ -3,10 +3,8 @@ import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom'
 import './App.css'
 import Training from './Pages/Training'
 import About from './Pages/About'
-import { Button } from './components/Button'
-import UploadForm from './components/UploadForm'
-import ImageGrid from './components/ImageGrid'
-
+import Nutrition from './Pages/Nutrition'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
 
@@ -17,15 +15,14 @@ const App = () => {
                 <ul className='nav-menu active'>
                     <li className="nav-links"><Link to="/">Home</Link></li>
                     <li className="nav-links"><Link to="/training">Training</Link></li>
+                    <li className="nav-links"><Link to="/nutrition">Ernährung</Link></li>
                 </ul>
-                <Button>Anmelden</Button>
             </nav>
             <Switch>
                 <Route path="/" exact component={About} />
                 <Route path="/training" component={Training} />
+                <Route path="/nutrition" component={Nutrition} />
             </Switch>
-            <UploadForm />
-            <ImageGrid />
 
         </Router>
     )
