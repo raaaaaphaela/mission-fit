@@ -23,8 +23,7 @@ export default function Training() {
 
     return (
         <section className="training-section">
-            <h1>Training</h1>
-            <h2>Was steht heute an?</h2>
+
             <div className="btn-section">
                 <button onClick={selectWorkout} value={upperWorkout}>Oberkörper</button>
                 <button onClick={selectWorkout} value={legWorkout}>Beine</button>
