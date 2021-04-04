@@ -3,15 +3,16 @@ import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom'
 import './App.css'
 import Training from './Pages/Training'
 import About from './Pages/About'
-import Nutrition from './Pages/Nutrition'
+import Nutrition from './Pages/Nutrition/Nutrition'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
+import GoodReasons from './Pages/Nutrition/GoodReasons'
 
 const App = () => {
 
     return (
         <Router>
-            <Navbar collapseOnSelect expand="lg" variant="dark">
+            <Navbar collapseOnSelect expand="md" variant="dark" className="sticky-top">
                 <Container>
                     <Navbar.Brand href="/"><i className="fas fa-heartbeat"></i></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -21,11 +22,11 @@ const App = () => {
                             <Nav.Link href="/">Startseite</Nav.Link>
                             <Nav.Link href="/training">Training</Nav.Link>
                             <NavDropdown title="Ernährung" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="/nutrition">Übersicht</NavDropdown.Item>
                                 <NavDropdown.Item href="/">Ernährungsbasics</NavDropdown.Item>
+                                <NavDropdown.Item href="/nutrition">Wichtige Nährstoffe</NavDropdown.Item>
                                 <NavDropdown.Item href="/">Rezepte</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="/">Gute Gründe</NavDropdown.Item>
+                                <NavDropdown.Item href="/good-reasons">Gute Gründe</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
@@ -36,6 +37,7 @@ const App = () => {
                 <Route path="/" exact component={About} />
                 <Route path="/training" component={Training} />
                 <Route path="/nutrition" component={Nutrition} />
+                <Route path="/good-reasons" component={GoodReasons} />
             </Switch>
 
         </Router>

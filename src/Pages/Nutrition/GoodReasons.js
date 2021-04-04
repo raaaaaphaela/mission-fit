@@ -1,18 +1,16 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
+import React from 'react'
+import { Container } from 'react-bootstrap'
 import Button from 'react-bootstrap/Button';
-import SimpleCard from '../components/Cards/SimpleCard';
-import Header from '../components/Headings/Header';
-import YoutubeEmbed from '../components/YoutubeEmbed/YoutubeEmbed';
-import './styles/Nutrition.css';
-import { heading, cards, advantages } from '../data/nutrition-home';
+import SimpleCard from '../../components/Cards/SimpleCard';
+import Header from '../../components/Headings/Header';
+import YoutubeEmbed from '../../components/YoutubeEmbed/YoutubeEmbed';
+import { heading, cards, advantages } from '../../data/nutrition-home';
 
-const Nutrition = () => {
-
+const GoodReasons = () => {
     return (
-        <Container className="nutrition">
+        <Container>
             <Header text={heading.text} title={heading.title} />
-            <div className="container">
+            <div className="card-container">
                 {cards.map((card) => {
                     return <SimpleCard title={card.title} text={card.text} />
                 })}
@@ -34,10 +32,8 @@ const Nutrition = () => {
                     })}
                 </ul>
             </Container>
-
         </Container>
-
     )
 }
 
-export default Nutrition
+export default GoodReasons

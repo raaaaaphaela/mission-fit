@@ -113,10 +113,16 @@ min-height: 80px;
 
 /* Card styling */
 
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .card-style {
     text-align: center;
     width: 70%;
-    margin: 1rem 10rem;
+    margin-top: 1rem;
+   
 }
 
 .card-style h5 {
@@ -124,7 +130,7 @@ min-height: 80px;
 }
 
 .card-style p {
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
     
 }
 
