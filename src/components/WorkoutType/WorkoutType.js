@@ -10,7 +10,7 @@ export default function WorkoutType({ workoutType, workouts, category }) {
                     if (workout.category.includes('every') || workout.category.includes(category)) {
                         return (
                             <div className="single-workout">
-                                <h1>{workout.title}</h1>
+                                <h5>{workout.title}</h5>
                                 <YoutubeEmbed embedId={workout.url} />
                             </div>
                         )

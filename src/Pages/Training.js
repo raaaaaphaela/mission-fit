@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import WorkoutType from '../components/WorkoutType/WorkoutType'
 import { workouts } from '../data/workouts'
 import Header from '../components/Header'
-import '../styles/Training.css'
 import { Container } from 'react-bootstrap'
 
 
