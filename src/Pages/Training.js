@@ -3,6 +3,7 @@ import WorkoutType from '../components/WorkoutType/WorkoutType'
 import { workouts } from '../data/workouts'
 import Header from '../components/Header'
 import '../styles/Training.css'
+import { Container } from 'react-bootstrap'
 
 
 export default function Training() {
@@ -25,7 +26,7 @@ export default function Training() {
     }
 
     return (
-        <section className="training-section">
+        <Container className="training-section" id="page-container" >
             <Header title="Training" text="" />
 
             <div className="btn-section">
@@ -35,7 +36,7 @@ export default function Training() {
             {todayTraining === upperWorkout ? <WorkoutType workouts={workouts} category={upperWorkout} /> : ''}
             {todayTraining === legWorkout ? <WorkoutType workouts={workouts} category={legWorkout} /> : ''}
 
-        </section>
+        </Container>
     )
 
 }

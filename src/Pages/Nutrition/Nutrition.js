@@ -4,7 +4,8 @@ import { Container } from 'react-bootstrap';
 const Nutrition = () => {
 
     return (
-        <Container className="nutrition">
+        <Container id="page-container">
+
 
         </Container>
 

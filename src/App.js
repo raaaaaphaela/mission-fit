@@ -7,6 +7,7 @@ import Nutrition from './Pages/Nutrition/Nutrition'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import Vegan from './Pages/Nutrition/Vegan'
+import Footer from './components/Footer'
 
 const App = () => {
 
@@ -33,12 +34,14 @@ const App = () => {
                 </Container>
             </Navbar>
 
+
             <Switch>
                 <Route path="/" exact component={About} />
                 <Route path="/training" component={Training} />
                 <Route path="/nutrition" component={Nutrition} />
                 <Route path="/vegan" component={Vegan} />
             </Switch>
+            <Footer></Footer>
 
         </Router>
     )

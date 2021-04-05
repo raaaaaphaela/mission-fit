@@ -7,7 +7,7 @@ import { heading, cards, advantages, reasons } from '../../data/reasons';
 
 const Vegan = () => {
     return (
-        <Container>
+        <Container id="page-container">
             <Header text={heading.text} title={heading.title} />
 
             <div className="card-container">
