@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import WorkoutType from '../components/WorkoutType/WorkoutType'
 import { workouts } from '../data/workouts'
-import Header from '../components/Headings/Header'
-import './styles/Training.css'
+import Header from '../components/Header'
+import '../styles/Training.css'
 
 
 export default function Training() {
@@ -19,6 +19,8 @@ export default function Training() {
             case legWorkout:
                 setTodayTraining(legWorkout)
                 break;
+            default:
+                setTodayTraining(null)
         }
     }
 

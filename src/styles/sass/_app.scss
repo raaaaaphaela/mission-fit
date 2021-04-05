@@ -5,26 +5,16 @@
   
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 /* Header */
 .header-text {
     padding: 2rem 0 0 0;
     text-align: center;
-}
-.header-text p {
+
+    p {
     padding: 1rem 0 0 0;
 }
-
-#heading {
-    text-align: center;
-    font-size: 3rem;
-    padding-top: 1.5rem;
 }
+
 
 /* Section styles */
 
@@ -111,26 +101,5 @@ min-height: 80px;
   left: 0;
 }
 
-/* Card styling */
 
-.card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.card-style {
-    text-align: center;
-    width: 70%;
-    margin-top: 1rem;
-   
-}
-
-.card-style h5 {
-    background: var(--card);
-}
-
-.card-style p {
-    padding: 1rem 0.5rem;
-    
-}
 

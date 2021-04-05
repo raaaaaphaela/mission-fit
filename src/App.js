@@ -1,12 +1,12 @@
 import React from 'react'
-import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom'
-import './App.css'
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
+import './styles/sass/main.scss'
 import Training from './Pages/Training'
 import About from './Pages/About'
 import Nutrition from './Pages/Nutrition/Nutrition'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
-import GoodReasons from './Pages/Nutrition/GoodReasons'
+import Vegan from './Pages/Nutrition/Vegan'
 
 const App = () => {
 
@@ -26,7 +26,7 @@ const App = () => {
                                 <NavDropdown.Item href="/nutrition">Wichtige Nährstoffe</NavDropdown.Item>
                                 <NavDropdown.Item href="/">Rezepte</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="/good-reasons">Gute Gründe</NavDropdown.Item>
+                                <NavDropdown.Item href="/vegan">Veganismus</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
                     </Navbar.Collapse>
@@ -37,7 +37,7 @@ const App = () => {
                 <Route path="/" exact component={About} />
                 <Route path="/training" component={Training} />
                 <Route path="/nutrition" component={Nutrition} />
-                <Route path="/good-reasons" component={GoodReasons} />
+                <Route path="/vegan" component={Vegan} />
             </Switch>
 
         </Router>
