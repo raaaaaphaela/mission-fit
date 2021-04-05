@@ -62,7 +62,12 @@ min-height: 80px;
 
 }
 
-
+.nav-link {
+    color: white !important;
+}
+.nav-link:hover {
+    color: #89c8f1 !important;
+}
 
 /* Progress Bar */
 .progress-bar {
