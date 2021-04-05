@@ -2,7 +2,7 @@ import React from 'react'
 import { Container } from 'react-bootstrap'
 import SimpleCard from '../../components/Cards/SimpleCard';
 import Header from '../../components/Header';
-import YoutubeEmbed from '../../components/YoutubeEmbed/YoutubeEmbed';
+import YoutubeEmbed from '../../components/YoutubeEmbed';
 import { heading, cards, advantages, reasons } from '../../data/reasons';
 
 const Vegan = () => {

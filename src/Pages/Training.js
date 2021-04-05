@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import WorkoutType from '../components/WorkoutType/WorkoutType'
+import WorkoutType from '../components/WorkoutType'
 import { workouts } from '../data/workouts'
 import Header from '../components/Header'
 import { Container } from 'react-bootstrap'

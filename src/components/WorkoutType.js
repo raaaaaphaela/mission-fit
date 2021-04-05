@@ -1,5 +1,5 @@
 import React from 'react'
-import YoutubeEmbed from '../YoutubeEmbed/YoutubeEmbed'
+import YoutubeEmbed from './YoutubeEmbed'
 
 export default function WorkoutType({ workoutType, workouts, category }) {
     return (
