@@ -2,13 +2,13 @@ import React from 'react'
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import './styles/sass/main.scss'
 import Training from './Pages/Training'
-import About from './Pages/About'
 import Nutrition from './Pages/Nutrition'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 import Vegan from './Pages/Vegan'
 import Footer from './components/Footer'
 import NutrientsPage from './Pages/NutrientsPage'
+import Management from './Pages/Management'
 
 const App = () => {
 
@@ -21,7 +21,7 @@ const App = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto"></Nav>
                         <Nav>
-                            <Nav.Link href="/">Startseite</Nav.Link>
+                            <Nav.Link href="/">Management</Nav.Link>
                             <Nav.Link href="/training">Training</Nav.Link>
                             <NavDropdown title="Ernährung" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="/">Ernährungsbasics</NavDropdown.Item>
@@ -37,7 +37,7 @@ const App = () => {
 
 
             <Switch>
-                <Route path="/" exact component={About} />
+                <Route path="/" exact component={Management} />
                 <Route path="/training" component={Training} />
                 <Route path="/nutrition" component={Nutrition} />
                 <Route path="/nutrients" component={NutrientsPage} />
