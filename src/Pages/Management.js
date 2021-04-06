@@ -9,7 +9,7 @@ export default function Management() {
 
     const data = {
         title: 'Management',
-        text: 'Hier findet Du alle Optionen, um Dein persönliches Training zu gestalten'
+        text: 'Hier findet Du alle Optionen, um Dein persönliches Training zu gestalten!'
     }
     return (
         <Container id="page-container">
