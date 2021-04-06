@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { projectFirestore, projectStorage, timestamp } from '../firebase/config'
+import { db, projectStorage, timestamp } from '../firebase/config'
 
 const useStorage = (file) => {
 
@@ -10,7 +10,7 @@ const useStorage = (file) => {
     useEffect(() => {
         // references
         const storageRef = projectStorage.ref(file.name);
-        const collectionRef = projectFirestore.collection('images');
+        const collectionRef = db.collection('images');
 
         storageRef.put(file).on('state_changed', (snap) => {
             // show percentages done

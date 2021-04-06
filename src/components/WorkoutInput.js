@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { projectFirestore } from '../firebase/config';
+import { db } from '../firebase/config';
 
 
 const WorkoutInput = () => {
@@ -11,7 +11,7 @@ const WorkoutInput = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        projectFirestore.collection('workouts').add({
+        db.collection('workouts').add({
             title: title,
             category: category,
             video: video
@@ -32,11 +32,12 @@ const WorkoutInput = () => {
             </div>
             <div className="form-group">
                 <label >Kategorie</label>
-                <select onChange={(e) => setCategory(e.target.value)} className="form-control" >
+                <select onChange={(e) => setCategory(e.target.value)} className="form-control" required>
                     <option value="none" selected disabled hidden>Kategorie wählen</option>
                     <option value="lower">Beine</option>
                     <option value="upper">Oberkörper</option>
                     <option value="cardio">Cardio</option>
+                    <option value="beforeAndAfter">Warm-Up / Cool-Down</option>
                     <option value="recovery">Recovery</option>
                 </select>
             </div>
