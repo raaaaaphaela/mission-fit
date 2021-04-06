@@ -52,29 +52,6 @@
     &  p {
         padding: 1.5rem;
     }
-
-    .reasons-card__btn {
-        padding: 0.5rem 1rem;
-        border: none;
-        border-radius: 5px;
-        width: 8rem;
-        align-self: center;
-        margin-bottom: 1rem;
-        background: $card;
-
-        a {
-            color: white;
-        }
-
-    }
-    
-    .reasons-card__btn:hover {
-         background: $background;
-
-         a {
-            text-decoration: none;
-         }
-    }
 }
 
 

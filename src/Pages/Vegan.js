@@ -1,9 +1,9 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
-import SimpleCard from '../../components/Cards/SimpleCard';
-import Header from '../../components/Header';
-import YoutubeEmbed from '../../components/YoutubeEmbed';
-import { heading, cards, advantages, reasons } from '../../data/reasons';
+import SimpleCard from '../components/Cards/SimpleCard';
+import Header from '../components/Header';
+import YoutubeEmbed from '../components/YoutubeEmbed';
+import { heading, cards, advantages, reasons } from '../data/reasons';
 
 const Vegan = () => {
     return (
@@ -37,7 +37,7 @@ const Vegan = () => {
                                 <div className="reasons-card__image" style={{ backgroundImage: `url(${reason.image})` }}></div>
                                 <h5>{reason.title}</h5>
                                 <p>{reason.text}</p>
-                                <button className="reasons-card__btn"><a href={reason.link} target="_blank" rel="noreferrer">Mehr Infos</a></button>
+                                <button className="custom-btn"><a href={reason.link} target="_blank" rel="noreferrer">Mehr Infos</a></button>
                             </div>
                         )
                     })}

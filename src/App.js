@@ -3,11 +3,12 @@ import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
 import './styles/sass/main.scss'
 import Training from './Pages/Training'
 import About from './Pages/About'
-import Nutrition from './Pages/Nutrition/Nutrition'
+import Nutrition from './Pages/Nutrition'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
-import Vegan from './Pages/Nutrition/Vegan'
+import Vegan from './Pages/Vegan'
 import Footer from './components/Footer'
+import NutrientsPage from './Pages/NutrientsPage'
 
 const App = () => {
 
@@ -24,7 +25,7 @@ const App = () => {
                             <Nav.Link href="/training">Training</Nav.Link>
                             <NavDropdown title="Ernährung" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="/">Ernährungsbasics</NavDropdown.Item>
-                                <NavDropdown.Item href="/nutrition">Wichtige Nährstoffe</NavDropdown.Item>
+                                <NavDropdown.Item href="/nutrients">Wichtige Nährstoffe</NavDropdown.Item>
                                 <NavDropdown.Item href="/">Rezepte</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="/vegan">Veganismus</NavDropdown.Item>
@@ -39,6 +40,7 @@ const App = () => {
                 <Route path="/" exact component={About} />
                 <Route path="/training" component={Training} />
                 <Route path="/nutrition" component={Nutrition} />
+                <Route path="/nutrients" component={NutrientsPage} />
                 <Route path="/vegan" component={Vegan} />
             </Switch>
             <Footer></Footer>
