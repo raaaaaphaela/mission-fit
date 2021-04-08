@@ -1,0 +1,76 @@
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    max-height: 18rem;
+
+    .header-text {
+        padding: 0;
+    }
+
+    & p {
+        margin-bottom: 2rem;
+    }
+
+    & .custom-btn {
+        width: auto;
+    }
+}
+
+.nutrients-intro {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+}
+
+.nutrients-pyramid {
+    padding: 1rem 0;
+}
+
+.criticals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+
+    & h3 {
+        padding: 2rem 0 1rem 0;
+    }
+
+    .criticals-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        & .card {
+            flex: 0 0 100%;
+            margin: 0.5rem;
+        }
+    }
+}
+
+.summary {
+    background: $grey;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    line-height: 1.8;
+
+    h3 {
+        padding: 1rem 0;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex: 0 0 40% !important;
+    }
+}
+
+@media (min-width: 1200px) {
+   .card {
+        flex: 0 0 30% !important;
+    }
+}
