@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { db } from '../firebase/config';
 
 
-const WorkoutInput = () => {
+export default function WorkoutInput() {
 
     const [title, setTitle] = useState('');
     const [category, setCategory] = useState('');
@@ -45,9 +45,7 @@ const WorkoutInput = () => {
                 <label>Video ID</label>
                 <input onChange={(e) => setVideo(e.target.value)} type="text" className="form-control" placeholder="Youtube Video-ID eingeben" required />
             </div>
-            <button type="submit" className="custom-btn fancy" id="submit-btn">Abschicken</button>
+            <button type="submit" className="btn btn-primary" id="submit-btn">Abschicken</button>
         </form>
     )
 }
-
-export default WorkoutInput
