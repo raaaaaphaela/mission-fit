@@ -30,7 +30,8 @@ const ForgotPasswort = () => {
         <Container id="page-container" className="d-flex flex-column justify-content-center col-md-6 col-lg-4">
             <Card>
                 <Card.Body>
-                    <h2 className="text-center mb-4">Neues Passwort anfordern</h2>
+                    <h2 className="text-center mb-4">Passwort vergessen?</h2>
+                    <p>Kein Problem. Wenn du ein Profil hast, gib deine Mail-Adresse ein und wir schicken dir einen Link zum Zurücksetzen des Passworts.</p>
                     {error && <Alert variant="danger">{error}</Alert>}
                     {message && <Alert variant="success">{message}</Alert>}
                     <Form onSubmit={handleSubmit}>
@@ -39,7 +40,7 @@ const ForgotPasswort = () => {
                             <Form.Control type="email" ref={emailRef} required></Form.Control>
                         </Form.Group>
 
-                        <Button type="submit" className="w-100" disabled={loading}>Passwort erneuern</Button>
+                        <Button type="submit" className="w-100" disabled={loading}>Link anfordern</Button>
                     </Form>
                     <div className="w-100 text-center mt-3">
                         <Link to="/login">Login</Link>
@@ -47,9 +48,9 @@ const ForgotPasswort = () => {
 
                 </Card.Body>
             </Card>
-            <div className="w-100 text-center mt-2">
-                Du hast noch einen Account? <Link to="/signup">Anmelden</Link>.
-            </div>
+            {/* <div className="w-100 text-center mt-2">
+                Du hast noch keinen Account? <Link to="/signup">Anmelden</Link>.
+            </div> */}
 
         </Container>
     )
