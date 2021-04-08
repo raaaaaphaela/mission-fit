@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Jumbotron } from 'react-bootstrap';
-import Header from '../components/Header';
-import pyramid from '../images/pyramide.jpg';
-import { criticals, summaryTipps } from '../data/criticalNutrients';
-import SimpleCard from '../components/Cards/SimpleCard';
+import Header from '../Header';
+import pyramid from '../../images/pyramide.jpg';
+import { criticals, summaryTipps } from '../../data/criticalNutrients';
+import SimpleCard from '../SimpleCard';
 
 
 const NutrientsPage = () => {

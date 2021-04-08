@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import WorkoutType from '../components/WorkoutType'
-import Header from '../components/Header'
+import WorkoutType from '../WorkoutType'
+import Header from '../Header'
 import { Container } from 'react-bootstrap'
-import { db } from '../firebase/config'
+import { db } from '../../firebase/config'
 
 
 export default function Training() {

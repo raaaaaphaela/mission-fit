@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { Card, Container, Button, Alert, Jumbotron, Row, Col } from 'react-bootstrap'
 import { Link, useHistory } from 'react-router-dom'
-import { useAuth } from '../context/AuthContext'
-import '../firebase/config'
-import Header from '../components/Header'
-import WorkoutInput from '../components/WorkoutInput'
+import { useAuth } from '../../context/AuthContext'
+import '../../firebase/config'
+import Header from '../Header'
+import WorkoutInput from '../WorkoutInput'
 
 export default function Dashboard() {
     const [error, setError] = useState('')
