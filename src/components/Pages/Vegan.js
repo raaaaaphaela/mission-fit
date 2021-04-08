@@ -39,7 +39,7 @@ const Vegan = () => {
                                 <div className="reasons-card__image" style={{ backgroundImage: `url(${reason.image})` }}></div>
                                 <h5>{reason.title}</h5>
                                 <p>{reason.text}</p>
-                                <Button className="custom-btn"><a href={reason.link} target="_blank" rel="noreferrer">Mehr Infos</a></Button>
+                                <Button href={reason.link} target="_blank" rel="noreferrer">Mehr Infos</Button>
                             </div>
                         )
                     })}

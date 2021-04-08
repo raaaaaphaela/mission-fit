@@ -48,7 +48,7 @@ export default function Dashboard() {
                     </Card>
                 </Col>
                 <Col>
-                    <Card className="workout-input__section p-3">
+                    <Card className="workout-input__section p-3 mb-4 mt-4">
                         <h3>Neues Workout hinzufügen:</h3>
                         <WorkoutInput />
                     </Card>

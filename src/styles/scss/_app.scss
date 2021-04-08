@@ -11,27 +11,23 @@
     min-height: 84vh;
 }
 
-.custom-btn {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    width: 8rem;
-    align-self: center;
-    margin-bottom: 1rem;
-    background: $card;
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    max-height: 19rem;
 
-    a {
-        color: white;
+    .header-text {
+        padding: 0;
     }
-}
 
-.custom-btn:hover {
-        background: $background;
+    & p {
+        margin-bottom: 2rem;
+    }
 
-        a {
-        text-decoration: none;
-        color: white;
-        }
+     & a {
+        width: 10rem;
+        align-self: center;
+    }
 }
 
 /* Section styles */
