@@ -33,9 +33,9 @@ export default function Dashboard() {
             <Jumbotron>
                 <Header title={data.title} text={data.text} />
             </Jumbotron>
-            <Row>
+            <Row className="flex-column flex-lg-row">
                 <Col>
-                    <Card lg="8">
+                    <Card>
                         <Card.Body>
                             <h3 className="text-center mb-4">Mein Profil</h3>
                             {error && <Alert variant="danger">{error}</Alert>}
@@ -48,7 +48,7 @@ export default function Dashboard() {
                     </Card>
                 </Col>
                 <Col>
-                    <Card className="workout-input__section p-3 mb-4 mt-4">
+                    <Card className="workout-input__section p-3 mb-4 mt-4 mt-lg-0">
                         <h3>Neues Workout hinzufügen:</h3>
                         <WorkoutInput />
                     </Card>
