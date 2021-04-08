@@ -9,12 +9,12 @@ import Vegan from './components/Pages/Vegan'
 import Footer from './components/Footer'
 import NutrientsPage from './components/Pages/NutrientsPage'
 import AuthContext from './context/AuthContext'
-import Signup from './components/SignUp'
-import Login from './components/Login'
+// import Signup from './components/Pages/SignUp'
+import Login from './components/Pages/Login'
 import Dashboard from './components/Pages/Dashboard'
 import PrivateRoute from './components/PrivateRoute'
-import ForgotPasswort from './components/ForgotPasswort'
-import UpdateProfile from './components/UpdateProfile'
+import ForgotPasswort from './components/Pages/ForgotPasswort'
+import UpdateProfile from './components/Pages/UpdateProfile'
 
 const App = () => {
 
@@ -45,7 +45,7 @@ const App = () => {
                 <Switch>
                     <PrivateRoute path="/" exact component={Dashboard} />
                     <PrivateRoute path="/dashboard" component={Dashboard} />
-                    <Route path="/signup" component={Signup} />
+                    {/* <Route path="/signup" component={Signup} /> */}
                     <Route path="/login" component={Login} />
                     <Route path="/forgot-password" component={ForgotPasswort} />
                     <PrivateRoute path="/update-profile" component={UpdateProfile} />
@@ -63,20 +63,3 @@ const App = () => {
 }
 
 export default App
-
-// TODO: ggf. später die Playlist laden und als Liste ausgeben
-// const YOUTUBE_PLAYLIST_ITEMS_API = 'https://www.googleapis.com/youtube/v3/playlists';
-
-// const YT_API_KEY = 'AIzaSyAIGseZ0gYwvSj7BEx1SMrUNCnk4LQKrmQ'
-
-// async function getServerSideProps() {
-//     const res = await fetch(`${YOUTUBE_PLAYLIST_ITEMS_API}?part=snippet&id=PLsEnDwVEHwamZ5jX6X9yFeK3VpEyNzVbp&key=${YT_API_KEY}`)
-//     const data = await res.json();
-
-
-//     return {
-//         props: {
-//             data
-//         }
-//     }
-// }
