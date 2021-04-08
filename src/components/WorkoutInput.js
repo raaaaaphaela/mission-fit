@@ -11,10 +11,12 @@ export default function WorkoutInput() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
+        const videoId = video.substring(video.indexOf('v=') + 2, video.indexOf('v=') + 13)
+
         db.collection('workouts').add({
             title: title,
             category: category,
-            video: video
+            video: videoId
         }).then(() => {
             alert('Erfolgreich gespeichert!');
         }).catch(err => {
@@ -33,12 +35,12 @@ export default function WorkoutInput() {
             <div className="form-group">
                 <label >Kategorie</label>
                 <select onChange={(e) => setCategory(e.target.value)} className="form-control" required>
-                    <option value="none" selected disabled hidden>Kategorie wählen</option>
+                    <option value="none" defaultValue disabled hidden>Kategorie wählen</option>
                     <option value="lower">Beine</option>
                     <option value="upper">Oberkörper</option>
-                    <option value="cardio">Cardio</option>
+                    <option value="cardio">Cardio / Full Body</option>
                     <option value="beforeAndAfter">Warm-Up / Cool-Down</option>
-                    <option value="recovery">Recovery</option>
+                    <option value="stretch">Stretch</option>
                 </select>
             </div>
             <div className="form-group">
