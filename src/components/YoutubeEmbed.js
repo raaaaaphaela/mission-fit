@@ -5,17 +5,14 @@ import PropTypes from 'prop-types'
 const YoutubeEmbed = ({ embedId }) => {
 
     return (
-        <div className="video-responsive">
-            <iframe
-                width="450"
-                height="280"
-                src={`https://www.youtube.com/embed/${embedId}`}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                title="Embedded youtube"
-            />
-        </div>
+        <iframe
+            width="300vw"
+            height="180vh"
+            src={`https://www.youtube.com/embed/${embedId}`}
+            frameBorder="0"
+            allowFullScreen
+            title="Embedded youtube"
+        />
     )
 };
 

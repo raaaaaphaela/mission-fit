@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import WorkoutType from '../WorkoutType'
+import Workout from '../Workout'
 import Header from '../Header'
 import { Button, Container } from 'react-bootstrap'
 import { db } from '../../firebase/config'
@@ -55,7 +55,6 @@ export default function Training() {
     return (
         <Container className="training-section" id="page-container" >
             <Header title="Training" text="" />
-
             <div className="btn-section">
                 <Button className="training-btn" onClick={selectWorkout} value={upperWorkout}>Oberkörper</Button>
                 <Button onClick={selectWorkout} value={legWorkout}>Beine</Button>
@@ -63,14 +62,11 @@ export default function Training() {
                 <Button onClick={selectWorkout} value={stretch}>Stretch</Button>
                 <Button onClick={selectWorkout} value={beforeAndAfter}>Warm-Up/Cool-Down</Button>
             </div>
-
-            {training === upperWorkout ? <WorkoutType workouts={workouts} category={upperWorkout} /> : ''}
-            {training === legWorkout ? <WorkoutType workouts={workouts} category={legWorkout} /> : ''}
-            {training === cardio ? <WorkoutType workouts={workouts} category={cardio} /> : ''}
-            {training === stretch ? <WorkoutType workouts={workouts} category={stretch} /> : ''}
-            {training === beforeAndAfter ? <WorkoutType workouts={workouts} category={beforeAndAfter} /> : ''}
-
-
+            {training === upperWorkout ? <Workout workouts={workouts} category={upperWorkout} /> : ''}
+            {training === legWorkout ? <Workout workouts={workouts} category={legWorkout} /> : ''}
+            {training === cardio ? <Workout workouts={workouts} category={cardio} /> : ''}
+            {training === stretch ? <Workout workouts={workouts} category={stretch} /> : ''}
+            {training === beforeAndAfter ? <Workout workouts={workouts} category={beforeAndAfter} /> : ''}
         </Container>
     )
 
