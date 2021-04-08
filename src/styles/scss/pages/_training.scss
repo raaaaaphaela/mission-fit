@@ -15,19 +15,9 @@
     flex-direction: row;
 
     button {
-    padding: 1rem 2rem;
-    background-color: $background;
-    color: white;
-    font-size: 1rem;
-    border: none;
-    margin: 0.5rem;
-    border-radius: 5px;
+    padding: 0.5rem 1rem;
     margin: 1rem 0.5rem;
     }
-}
-
-.btn-section > button:hover, .active-btn {
-    background-color: $primary;
 }
 
 .single-workout {

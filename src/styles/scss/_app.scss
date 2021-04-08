@@ -79,7 +79,7 @@
 
 /* Navbar */
 .navbar {
-background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+background: linear-gradient(90deg, $primary 0%, #000851 100%);
 font-size: 1.2rem;
 min-height: 80px;
 
@@ -89,7 +89,7 @@ min-height: 80px;
     color: white !important;
 }
 .nav-link:hover {
-    color: #89c8f1 !important;
+    color: $card !important;
 }
 
 /* Progress Bar */

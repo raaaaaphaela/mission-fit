@@ -1,14 +1,12 @@
 .footer {
     height: 8vh;
     width: 100%;
-    background: $background;
+    background: linear-gradient(90deg, $primary 0%, $background 100%);
     color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    
     bottom: 0;
     left: 0;
 

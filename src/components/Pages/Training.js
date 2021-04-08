@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import WorkoutType from '../WorkoutType'
 import Header from '../Header'
-import { Container } from 'react-bootstrap'
+import { Button, Container } from 'react-bootstrap'
 import { db } from '../../firebase/config'
 
 
@@ -45,8 +45,8 @@ export default function Training() {
             <Header title="Training" text="" />
 
             <div className="btn-section">
-                <button onClick={selectWorkout} value={upperWorkout}>Oberkörper</button>
-                <button onClick={selectWorkout} value={legWorkout}>Beine</button>
+                <Button onClick={selectWorkout} value={upperWorkout}>Oberkörper</Button>
+                <Button onClick={selectWorkout} value={legWorkout}>Beine</Button>
             </div>
 
             {todayTraining === upperWorkout ? <WorkoutType workouts={workouts} category={upperWorkout} /> : ''}

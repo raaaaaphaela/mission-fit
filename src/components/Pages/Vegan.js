@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Button, Container, Jumbotron } from 'react-bootstrap'
 import SimpleCard from '../SimpleCard';
 import Header from '../Header';
 import YoutubeEmbed from '../YoutubeEmbed';
@@ -8,7 +8,9 @@ import { heading, cards, advantages, reasons } from '../../data/reasons';
 const Vegan = () => {
     return (
         <Container id="page-container">
-            <Header text={heading.text} title={heading.title} />
+            <Jumbotron>
+                <Header text={heading.text} title={heading.title} />
+            </Jumbotron>
 
             <div className="card-container">
                 {cards.map((card) => {
@@ -37,7 +39,7 @@ const Vegan = () => {
                                 <div className="reasons-card__image" style={{ backgroundImage: `url(${reason.image})` }}></div>
                                 <h5>{reason.title}</h5>
                                 <p>{reason.text}</p>
-                                <button className="custom-btn"><a href={reason.link} target="_blank" rel="noreferrer">Mehr Infos</a></button>
+                                <Button className="custom-btn"><a href={reason.link} target="_blank" rel="noreferrer">Mehr Infos</a></Button>
                             </div>
                         )
                     })}
