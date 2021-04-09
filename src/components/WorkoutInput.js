@@ -33,9 +33,9 @@ export default function WorkoutInput() {
                 <input onChange={(e) => setTitle(e.target.value)} type="text" className="form-control" placeholder="Workout-Titel eingeben" required />
             </div>
             <div className="form-group">
-                <label >Kategorie</label>
+                <label>Kategorie</label>
                 <select onChange={(e) => setCategory(e.target.value)} className="form-control" required>
-                    <option value="none" defaultValue disabled hidden>Kategorie wählen</option>
+                    <option value="none" disabled>Kategorie wählen</option>
                     <option value="lower">Beine</option>
                     <option value="upper">Oberkörper</option>
                     <option value="cardio">Cardio / Full Body</option>
@@ -44,8 +44,8 @@ export default function WorkoutInput() {
                 </select>
             </div>
             <div className="form-group">
-                <label>Video ID</label>
-                <input onChange={(e) => setVideo(e.target.value)} type="text" className="form-control" placeholder="Youtube Video-ID eingeben" required />
+                <label>Youtube URL</label>
+                <input onChange={(e) => setVideo(e.target.value)} type="text" className="form-control" placeholder="URL eingeben" required />
             </div>
             <button type="submit" className="btn btn-primary" id="submit-btn">Abschicken</button>
         </form>
