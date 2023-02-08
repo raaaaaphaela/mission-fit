@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A little private fun Project to save a link to your favorite Youtube Workouts on firebase and learn something about a plant based diet.
 
 ## Available Scripts
 
